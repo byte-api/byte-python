@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Welcome to byte-api’s documentation! &mdash; byte-api  documentation</title>
+  <title>Installation &mdash; byte-api  documentation</title>
   
 
   
@@ -35,7 +35,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Installation" href="installation.html" /> 
+    <link rel="next" title="Developer Interface" href="api.html" />
+    <link rel="prev" title="Welcome to byte-api’s documentation!" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -49,7 +50,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> byte-api
+            <a href="index.html" class="icon icon-home"> byte-api
           
 
           
@@ -80,8 +81,12 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#via-pip">Via pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#from-source-code">From source code</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Developer Interface</a></li>
 </ul>
 
@@ -97,7 +102,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">byte-api</a>
+          <a href="index.html">byte-api</a>
         
       </nav>
 
@@ -126,15 +131,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Welcome to byte-api’s documentation!</li>
+      <li>Installation</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/installation.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -147,27 +152,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="welcome-to-byte-api-s-documentation">
-<h1>Welcome to byte-api’s documentation!<a class="headerlink" href="#welcome-to-byte-api-s-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#via-pip">Via pip</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#from-source-code">From source code</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Developer Interface</a></li>
-</ul>
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>Supported Python Versions: <strong>3.5</strong> and higher.</p>
+<div class="section" id="via-pip">
+<h2>Via pip<a class="headerlink" href="#via-pip" title="Permalink to this headline">¶</a></h2>
+<p>To install byte-api, run this command in your terminal:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install byte-api
+</pre></div>
+</div>
+<p>This is the preferred installation method, as it will always install the latest stable release.
+If you do not have <a class="reference external" href="https://pip.pypa.io">pip</a> installed, this <a class="reference external" href="http://docs.python-guide.org/en/latest/starting/installation/">Python Installation Guide</a> can help with the process.</p>
+</div>
+<div class="section" id="from-source-code">
+<h2>From source code<a class="headerlink" href="#from-source-code" title="Permalink to this headline">¶</a></h2>
+<p>Source files for byte-api can be downloaded from the <a class="reference external" href="https://github.com/byte-api/byte-python">GitHub repository</a>.</p>
+<p>You can clone the public repository:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone git://github.com/byte-api/byte-python
+</pre></div>
+</div>
+<p>Or download <a class="reference external" href="https://github.com/byte-api/byte-python/tarball/master">tarball</a>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> curl -OL https://github.com/byte-api/byte-python/tarball/master
+</pre></div>
+</div>
+<p>Once you get the source files, you can install them with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python setup.py install
+</pre></div>
 </div>
 </div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
-</ul>
 </div>
 
 
@@ -178,8 +190,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="api.html" class="btn btn-neutral float-right" title="Developer Interface" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to byte-api’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

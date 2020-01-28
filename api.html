@@ -1,0 +1,431 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Developer Interface &mdash; byte-api  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> byte-api
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Developer Interface</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">byte-api</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Developer Interface</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="developer-interface">
+<h1>Developer Interface<a class="headerlink" href="#developer-interface" title="Permalink to this headline">¶</a></h1>
+<p>This page of the documentation will cover all methods and classes available to the developer.</p>
+<span class="target" id="module-byte_api"></span><dl class="class">
+<dt id="byte_api.Client">
+<em class="property">class </em><code class="sig-prename descclassname">byte_api.</code><code class="sig-name descname">Client</code><span class="sig-paren">(</span><em class="sig-param">token: str</em>, <em class="sig-param">headers=None</em><span class="sig-paren">)</span><a class="headerlink" href="#byte_api.Client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes the API for the client</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>token</strong> (<em>str</em>) – Authorization token</p></li>
+<li><p><strong>headers</strong> (<em>dict</em>) – Additional headers <strong>except Authorization</strong></p></li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="byte_api.Client.comment">
+<code class="sig-name descname">comment</code><span class="sig-paren">(</span><em class="sig-param">id: str</em>, <em class="sig-param">text: str</em><span class="sig-paren">)</span> &#x2192; byte_api.types.Response<a class="headerlink" href="#byte_api.Client.comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Comments a byte</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>str</em>) – Byte (post) id</p></li>
+<li><p><strong>text</strong> – Comment text</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Comment</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="byte_api.Client.delete_comment">
+<code class="sig-name descname">delete_comment</code><span class="sig-paren">(</span><em class="sig-param">id: str</em><span class="sig-paren">)</span> &#x2192; byte_api.types.Response<a class="headerlink" href="#byte_api.Client.delete_comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes a comment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> (<em>str</em>) – Comment id patterned by <strong>{post id}-{comment id}</strong></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="byte_api.Client.dislike">
+<code class="sig-name descname">dislike</code><span class="sig-paren">(</span><em class="sig-param">id: str</em><span class="sig-paren">)</span> &#x2192; byte_api.types.Response<a class="headerlink" href="#byte_api.Client.dislike" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes like from a byte</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> (<em>str</em>) – Byte (post) id</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="byte_api.Client.follow">
+<code class="sig-name descname">follow</code><span class="sig-paren">(</span><em class="sig-param">id: str</em><span class="sig-paren">)</span> &#x2192; byte_api.types.Response<a class="headerlink" href="#byte_api.Client.follow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subscribes to a user</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> (<em>str</em>) – User id</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="byte_api.Client.get_colors">
+<code class="sig-name descname">get_colors</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; byte_api.types.Response<a class="headerlink" href="#byte_api.Client.get_colors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets available color schemes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="byte_api.Client.get_user">
+<code class="sig-name descname">get_user</code><span class="sig-paren">(</span><em class="sig-param">id: str</em><span class="sig-paren">)</span> &#x2192; byte_api.types.Response<a class="headerlink" href="#byte_api.Client.get_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a user profile</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> (<em>str</em>) – User id</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Account</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="byte_api.Client.like">
+<code class="sig-name descname">like</code><span class="sig-paren">(</span><em class="sig-param">id: str</em><span class="sig-paren">)</span> &#x2192; byte_api.types.Response<a class="headerlink" href="#byte_api.Client.like" title="Permalink to this definition">¶</a></dt>
+<dd><p>Likes a byte</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> (<em>str</em>) – Byte (post) id</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="byte_api.Client.loop">
+<code class="sig-name descname">loop</code><span class="sig-paren">(</span><em class="sig-param">id: str</em><span class="sig-paren">)</span> &#x2192; byte_api.types.Response<a class="headerlink" href="#byte_api.Client.loop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Increments loop counter</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> (<em>str</em>) – Byte (post) id</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="byte_api.Client.rebyte">
+<code class="sig-name descname">rebyte</code><span class="sig-paren">(</span><em class="sig-param">id: str</em><span class="sig-paren">)</span> &#x2192; byte_api.types.Response<a class="headerlink" href="#byte_api.Client.rebyte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Increments loop counter</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> (<em>str</em>) – Byte (post) id</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="byte_api.Client.set_bio">
+<code class="sig-name descname">set_bio</code><span class="sig-paren">(</span><em class="sig-param">bio: str</em><span class="sig-paren">)</span> &#x2192; byte_api.types.Response<a class="headerlink" href="#byte_api.Client.set_bio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets bio</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>bio</strong> (<em>str</em>) – New bio</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="byte_api.Client.set_color_scheme">
+<code class="sig-name descname">set_color_scheme</code><span class="sig-paren">(</span><em class="sig-param">color_scheme: int</em><span class="sig-paren">)</span> &#x2192; byte_api.types.Response<a class="headerlink" href="#byte_api.Client.set_color_scheme" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets color scheme</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color_scheme</strong> (<em>str</em>) – Id of new color scheme</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="byte_api.Client.set_display_name">
+<code class="sig-name descname">set_display_name</code><span class="sig-paren">(</span><em class="sig-param">display_name: str</em><span class="sig-paren">)</span> &#x2192; byte_api.types.Response<a class="headerlink" href="#byte_api.Client.set_display_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets name to display</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>display_name</strong> (<em>str</em>) – New name to display</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="byte_api.Client.set_info">
+<code class="sig-name descname">set_info</code><span class="sig-paren">(</span><em class="sig-param">bio: str = None</em>, <em class="sig-param">display_name: str = None</em>, <em class="sig-param">username: str = None</em>, <em class="sig-param">color_scheme: int = None</em><span class="sig-paren">)</span> &#x2192; byte_api.types.Response<a class="headerlink" href="#byte_api.Client.set_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets profile info</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bio</strong> (<em>str</em>) – New bio</p></li>
+<li><p><strong>display_name</strong> (<em>str</em>) – New name to display</p></li>
+<li><p><strong>username</strong> (<em>str</em>) – New username</p></li>
+<li><p><strong>color_scheme</strong> (<em>int</em>) – Id of new color scheme</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="byte_api.Client.set_username">
+<code class="sig-name descname">set_username</code><span class="sig-paren">(</span><em class="sig-param">username: str</em><span class="sig-paren">)</span> &#x2192; byte_api.types.Response<a class="headerlink" href="#byte_api.Client.set_username" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets username</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>username</strong> (<em>str</em>) – New username</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="byte_api.Client.unfollow">
+<code class="sig-name descname">unfollow</code><span class="sig-paren">(</span><em class="sig-param">id: str</em><span class="sig-paren">)</span> &#x2192; byte_api.types.Response<a class="headerlink" href="#byte_api.Client.unfollow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unsubscribes to a user</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> (<em>str</em>) – User id</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, bixnel
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

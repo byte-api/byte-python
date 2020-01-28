@@ -1,12 +1,16 @@
+====================================
 Welcome to byte-api's documentation!
 ====================================
 
 .. toctree::
-   :maxdepth: 2
    :caption: Contents:
+   :maxdepth: 2
+
+   installation
+   api
 
 
-
+==================
 Indices and tables
 ==================
 
