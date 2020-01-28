@@ -10,7 +10,8 @@ class Api(object):
             self.headers = headers + {'Authorization': token}
         else:
             self.headers = {
-                'User-Agent': 'byte/0.2 (co.byte.video; build:145; iOS 13.3.0) Alamofire/4.9.1',
+                'User-Agent': 'byte/0.2 (co.byte.video; build:145; '
+                              'iOS 13.3.0) Alamofire/4.9.1',
                 'Authorization': token
             }
 

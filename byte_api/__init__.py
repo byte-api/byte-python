@@ -3,4 +3,4 @@ from .types import *
 
 
 __author__ = 'bixnel'
-__version__ = '1.0'
+__version__ = '1.1'
